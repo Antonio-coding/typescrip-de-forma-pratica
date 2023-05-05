@@ -5,6 +5,6 @@ const routes = Router();
 
 
 routes.get('/users', userController.index);
-routes.get('/users/create', userController.create);
+routes.post('/users', userController.create);
 
 export default routes;

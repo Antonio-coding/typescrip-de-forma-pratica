@@ -11,7 +11,7 @@ export default {
     const emailService = new EmailService();
     emailService.sendMail({
       to: { name: "Antonio Thiago", email: "antonioThiago@rocketseat.com.br" },
-      message: { subject: "bem viando ao estudos", body: "seja bem vindo" },
+      message: { subject: "bem vindo ao estudos", body: "seja bem vindo" },
     });
     return res.send();
   },

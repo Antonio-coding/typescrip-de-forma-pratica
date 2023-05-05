@@ -11,10 +11,13 @@ interface ImessageDTO {
   to: IMailTo;
   message: IMailMessage;
 }
+interface ImailService {
+  sendMail(resquest: ImessageDTO): void;
+}
 
 // Data Transfer Object (DDD)
 
-class EmailService {
+class EmailService implements ImailService {
   sendMail({ to, message }: ImessageDTO) {
     console.log("email enviado para ${to.name}: ${message.subject}");
   }
